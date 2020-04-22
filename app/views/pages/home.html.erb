@@ -4,8 +4,8 @@
       <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#skills">Skills</a>
       <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#about-me">About</a>
       <%= link_to "Lucas", root_path, class: "nav-item nav-link mx-3 navbar-item", id: "name" %>
-      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#">Portfolio</a>
-      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#">Contact</a>
+      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#my-work">My Work</a>
+      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#contact">Contact</a>
     </div>
   </div>
 </nav>
@@ -14,9 +14,9 @@
   <div class="container align-self-center banner">
     <h1>I'm Lucas Cunha</h1>
     <p>Your Fullstack Web Developer.</p>
-    <a class="contact-btn" href="#">Let's Chat!</a>
+    <a class="btn contact-btn" href="#">Let's Chat!</a>
   </div>
-    <%= image_tag("euTrim.jpg") %>
+  <%= image_tag("euPNG.png", class: "img") %>
 </div>
 
 <div class="container">
@@ -102,14 +102,79 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum excepturi impedit doloribus quos minus non veritatis voluptate eum nulla blanditiis sapiente vitae, numquam fugit aperiam, fugiat placeat minima! Natus.</p>
       </div>
       <div class="col-12 col-md-4 mb-3">
-        <%= image_tag("euTrim.jpg", width: '350') %>
+        <%= image_tag("euPNG.png", width: '350') %>
       </div>
       <div class="col-12 col-md-4">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum excepturi impedit doloribus quos minus non veritatis voluptate eum nulla blanditiis sapiente vitae, numquam fugit aperiam, fugiat placeat minima! Natus.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum excepturi impedit doloribus quos minus non veritatis voluptate eum nulla blanditiis sapiente vitae, numquam fugit aperiam, fugiat placeat minima! Natus.</p>
-        <a class="contact-btn" href="#">Contact Me!</a>
+        <a class="btn contact-btn" href="#">Contact Me!</a>
       </div>
     </div>
+  </div>
+
+  <!-- Portifolio -->
+
+  <div class="section" id="my-work">
+    <h2 class="d-flex justify-content-around my-5">My Work</h2>
+
+    <!-- Row -->
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <%= link_to "https://rioserve.herokuapp.com/", target: "_blank", class: "portifolio-card hvr-ripple-out hvr-bob" do %>
+          <div class="card">
+            <div class="d-flex justify-content-center">
+              <img class="card-img-top work-img" src="https://res.cloudinary.com/dtjyx4v7z/image/upload/v1586286469/randomeal_iphone_hqcw2y.png" alt="Randomeal website screenshot">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Randomeal</h5>
+              <p class="card-text">Randomeal is a mobile first app built in ruby in rails, that searches the internet just to find the perfect restaurat for you! Features a unique reverse filter and a Real-Time Data Scraping!</p>
+            </div>
+          </div>
+          <% end %>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <%= link_to "https://rioserve.herokuapp.com/", target: "_blank", class: "portifolio-card hvr-ripple-out  hvr-bob" do %>
+          <div class="card">
+            <div class="d-flex justify-content-center">
+              <%= image_tag("rioserve.png", class: "card-img-top p-3") %>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Rioserve</h5>
+              <p class="card-text">Rioserve is a restaurant reservation platform for Rio de Janeiro. It let's you, as a restaurant owner, register your restaurant for all the users to see and make some reservations!</p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <!-- Row End -->
+
+  </div>
+
+  <!-- Contact -->
+
+  <div class="section" id="contact">
+    <h2 class="d-flex justify-content-around">Contact Me!</h2>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Let's Collaborate</h5>
+            <ul class="">
+              <li class="list-group-item">
+                <i class="fab fa-whatsapp text-decoration-none"></i> +55 21 981796215
+              </li>
+              <li class="list-group-item">
+                <i class="far fa-envelope"></i> lucasdinizcunha@uol.com.br
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
   </div>
 </div>
