@@ -1,2 +1,114 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<nav class="navbar navbar-expand-lg sticky-top" id="nav">
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#skills">Skills</a>
+      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#about-me">About</a>
+      <%= link_to "Lucas", root_path, class: "nav-item nav-link mx-3 navbar-item", id: "name" %>
+      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#">Portfolio</a>
+      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url();">
+  <div class="container">
+    <h1>I'm Lucas Cunha</h1>
+    <p>Your Fullstack Web Developer.</p>
+    <a class="contact-btn" href="#">Let's Chat!</a>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Skills -->
+
+  <div class="section" id="skills">
+    <h2 class="d-flex justify-content-around my-5">My Skills</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Ruby on Rails</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Ruby</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">WordPress</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">HTML</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">CSS</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Git</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">GitHub</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Databases</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About me -->
+
+  <div class="section" id="about-me">
+    <h2 style="padding-bottom: 0px;">About Me</h2>
+    <hr>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum excepturi impedit doloribus quos minus non veritatis voluptate eum nulla blanditiis sapiente vitae, numquam fugit aperiam, fugiat placeat minima! Natus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum excepturi impedit doloribus quos minus non veritatis voluptate eum nulla blanditiis sapiente vitae, numquam fugit aperiam, fugiat placeat minima! Natus.</p>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <%= image_tag("euTrim.jpg", width: '350') %>
+      </div>
+      <div class="col-12 col-md-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum excepturi impedit doloribus quos minus non veritatis voluptate eum nulla blanditiis sapiente vitae, numquam fugit aperiam, fugiat placeat minima! Natus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum excepturi impedit doloribus quos minus non veritatis voluptate eum nulla blanditiis sapiente vitae, numquam fugit aperiam, fugiat placeat minima! Natus.</p>
+        <a class="contact-btn" href="#">Contact Me!</a>
+      </div>
+    </div>
+
+  </div>
+</div>
