@@ -26,10 +26,6 @@ hr {
   color: #22269E;
 }
 
-#name:hover {
-  color: #5E9CFE;
-}
-
 .navbar-item {
   transition: all 0.1s ease-in-out;
   color: rgb(50,50,50);
@@ -37,7 +33,7 @@ hr {
 
 .navbar-item:hover {
   transform: scale(1.04);
-  color: rgb(100,100,100);
+  color: #22269E;
 }
 #nav {
   background-color: transparent;
@@ -65,24 +61,17 @@ hr {
 }
 
 .banner {
-  background-size: cover;
-  background-position: center;
-  padding: 400px 0;
+ padding-left: 350px;
 }
 
 .banner h1 {
   margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 48px;
-  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 60px;
 }
 
 .banner p {
   font-size: 36px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
 .cards {
@@ -108,13 +97,15 @@ hr {
   padding: 140px 0;
 }
 
-.container {
-  overflow: hidden;
-}
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .banner {
+    background-position: center;
+    background-size: cover;
   }
 }
 
@@ -122,6 +113,11 @@ hr {
 @media (min-width: 576px) {
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .banner {
+    background-position: center;
+    background-size: cover;
   }
 }
 
