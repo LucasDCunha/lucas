@@ -195,6 +195,11 @@ footer {
     z-index: 1;
   }
 
+  .ban {
+    max-width: 575px;
+    overflow: hidden;
+  }
+
   .img {
     margin-left: -200px;
     width: 200%;
@@ -207,11 +212,6 @@ footer {
   .cards {
     grid-template-columns: 1fr;
   }
-
-  .banner {
-    padding-left: 150px;
-  }
-
 }
 
 // Medium devices (tablets, 768px and up)
@@ -221,8 +221,8 @@ footer {
   }
 
   .banner {
-  padding-left: 250px;
-}
+    padding-left: 250px;
+  }
 
 }
 
