@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg sticky-top" id="nav">
+<nav class="navbar navbar-expand-lg sticky-top nav" id="nav">
   <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#skills">Skills</a>
@@ -10,7 +10,7 @@
   </div>
 </nav>
 
-<div class="d-flex" style="background-color: rgb(245,245,245)">
+<div class="d-flex" style="background-color: #F8F9FA">
   <div class="container align-self-center banner">
     <h1>I'm Lucas Cunha</h1>
     <p>Your Fullstack Web Developer.</p>
@@ -28,64 +28,91 @@
     <div class="cards">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Ruby on Rails</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title">Ruby on Rails</h5>
+            <%= image_tag("ruby_on_rails.svg", class: "ruby-svg") %>
+          </div>
+          <p class="card-text mt-3">A web-application framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC).</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Ruby</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title">Ruby</h5>
+            <i class="far fa-gem icon-skills icon-skills text-danger"></i>
+          </div>
+          <p class="card-text mt-3">A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">WordPress</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title">WordPress</h5>
+            <i class="fab fa-wordpress-simple icon-skills" style="color: #207297;"></i>
+          </div>
+          <p class="card-text mt-3">WordPress is a free and open-source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">HTML</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title">HTML</h5>
+            <i class="fab fa-html5 icon-skills text-danger"></i>
+          </div>
+          <p class="card-text mt-3">Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">CSS</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title">CSS</h5>
+            <i class="fab fa-css3-alt icon-skills text-primary"></i>
+          </div>
+          <p class="card-text mt-3">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">JavaScript</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title">JavaScript</h5>
+            <i class="fab fa-js-square icon-skills" style="color: #F2D53B;"></i>
+          </div>
+          <p class="card-text mt-3">JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JS is high-level, often just-in-time compiled, and multi-paradigm.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Git</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title">Git</h5>
+            <i class="fas fa-code-branch icon-skills text-danger"></i>
+          </div>
+          <p class="card-text mt-3">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">GitHub</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title">GitHub</h5>
+            <i class="fab fa-github-alt icon-skills"></i>
+          </div>
+          <p class="card-text mt-3">GitHub brings together the world's largest community of developers to discover, share, and build better software. It  provides hosting for software development version control using Git</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Databases</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <h5 class="card-title">Databases</h5>
+            <i class="fas fa-database icon-skills" style="color: #4186C2;"></i>
+          </div>
+          <p class="card-text mt-3">A database is an organized collection of data, generally stored and accessed electronically from a computer system.</p>
         </div>
       </div>
     </div>
@@ -107,7 +134,7 @@
       <div class="col-12 col-md-4">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum excepturi impedit doloribus quos minus non veritatis voluptate eum nulla blanditiis sapiente vitae, numquam fugit aperiam, fugiat placeat minima! Natus.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis cum excepturi impedit doloribus quos minus non veritatis voluptate eum nulla blanditiis sapiente vitae, numquam fugit aperiam, fugiat placeat minima! Natus.</p>
-        <a class="btn contact-btn" href="#">Contact Me!</a>
+        <a class="btn contact-btn" href="#contact">Contact Me!</a>
       </div>
     </div>
   </div>
@@ -121,7 +148,7 @@
 
     <div class="row">
       <div class="col-12 col-md-6">
-        <%= link_to "https://rioserve.herokuapp.com/", target: "_blank", class: "portifolio-card hvr-ripple-out hvr-bob" do %>
+        <%= link_to "https://randomeal.co/", target: "_blank", class: "portifolio-card hvr-ripple-out hvr-bob" do %>
           <div class="card">
             <div class="d-flex justify-content-center">
               <img class="card-img-top work-img" src="https://res.cloudinary.com/dtjyx4v7z/image/upload/v1586286469/randomeal_iphone_hqcw2y.png" alt="Randomeal website screenshot">
@@ -162,19 +189,21 @@
         <div class="card">
           <div class="card-body">
             <h5 class="card-title text-center pb-5">Let's Collaborate</h5>
-            <ul class=" d-flex justify-content-around padding-0">
-              <li class="contact-text">
-                <i class="fab fa-whatsapp text-decoration-none"></i><p class="d-inline ml-3">+55 21 981796215</p>
-              </li>
-              <li class="contact-text">
-                <i class="far fa-envelope"></i><p class="d-inline ml-3">lucasdinizcunha@uol.com.br</p>
-              </li>
-            </ul>
+            <div class="row">
+              <div class="col-12 col-md-6 text-center">
+                <p><i class="fab fa-whatsapp pr-2"></i>+55 21 981796215</p>
+              </div>
+              <div class="col-12 col-md-6 text-center">
+                <p><i class="far fa-envelope pr-2"></i>lucasdinizcunha@uol.com.br</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-
   </div>
 </div>
+
+<footer>
+    <p class="text-center">This page was made with <i class="far fa-heart"></i> by Lucas Diniz Cunha</p>
+</footer>
