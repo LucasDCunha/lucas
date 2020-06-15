@@ -1,28 +1,84 @@
 <nav class="navbar navbar-expand-lg navbar-light sticky-top nav" id="nav">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
   <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
     <div class="navbar-nav">
-      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#skills">Skills</a>
+      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#my-work">My Work</a>
       <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#about-me">About</a>
       <%= link_to "Lucas", root_path, class: "nav-item nav-link mx-3 navbar-item", id: "name" %>
-      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#my-work">My Work</a>
+      <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#skills">Skills</a>
       <a class="nav-item nav-link mx-3 align-self-center navbar-item" href="#contact">Contact</a>
     </div>
   </div>
 </nav>
 
-<div class="d-flex ban" style="background-color: #F8F9FA">
-  <div class="container align-self-center banner">
-    <h1>I'm Lucas Cunha</h1>
-    <p>Your Full Stack Web Developer.</p>
-    <a class="btn contact-btn" href="#contact">Let's Chat!</a>
+<div class="container" style="padding-top: 200px;" id="my-work">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center">
+          <div class="col-12 col-md-6 my-3">
+            <%= link_to "https://randomealapp.herokuapp.com/", target: "_blank", class: "portifolio-card hvr-ripple-out hvr-bob" do %>
+              <div class="card">
+                <div class="d-flex justify-content-center">
+                  <img class="card-img work-img" src="https://res.cloudinary.com/dtjyx4v7z/image/upload/v1586286469/randomeal_iphone_hqcw2y.png" alt="Randomeal website screenshot">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Randomeal</h5>
+                  <p class="card-text">Randomeal is a mobile first app built in ruby in rails, that searches the internet just to find the perfect restaurat for you! Features a unique reverse filter and a Real-Time Data Scraping!</p>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <div class="col-12 col-md-6 my-3">
+            <%= link_to "https://rioserve.herokuapp.com/", target: "_blank", class: "portifolio-card hvr-ripple-out  hvr-bob" do %>
+              <div class="card">
+                <div class="d-flex justify-content-center">
+                  <%= image_tag("rioserve.png", class: "card-img p-2") %>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Rioserve</h5>
+                  <p class="card-text">Rioserve is a restaurant reservation platform for Rio de Janeiro. It let's you, as a restaurant owner, register your restaurant for all the users to see and make some reservations!</p>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <p style="font-weight: 999; font-size: 32px;"> < </p>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <p style="font-weight: 999; font-size: 32px;"> > </p>
+    </a>
   </div>
-  <%= image_tag("euPNG.png", class: "img") %>
-</div>
 
-<div class="container">
+  <!-- About me -->
+
+  <div class="section" id="about-me">
+    <h2 style="padding-bottom: 0px;">About Me</h2>
+    <hr>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <p>I’m a TI student at the Federal University of the State of Rio de Janeiro. Still, at high school, I discovered my passion for programming, and, since then, I've been pushing my limits to learn more every day. Graduated from Le Wagon, the best-rated coding Bootcamp worldwide, I find myself eager to pursue the work of a developer, always open to new challenges as a way to improve my background.</p>
+      </div>
+      <div class="col-12 col-md-4 mb-3">
+        <%= image_tag("euPNG.png", width: '350') %>
+      </div>
+      <div class="col-12 col-md-4">
+        <p>As a coder, I look for contributing to my community by turning the codes into tools that will positively add up to everyone’s life quality. I’m a team worker and I evolve under pressure, having hard work and commitment as my principals.</p>
+        <a class="btn contact-btn" href="#contact">Contact Me!</a>
+      </div>
+    </div>
+  </div>
 
   <!-- Skills -->
 
@@ -119,66 +175,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- About me -->
-
-  <div class="section" id="about-me">
-    <h2 style="padding-bottom: 0px;">About Me</h2>
-    <hr>
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <p>I’m a TI student at the Federal University of the State of Rio de Janeiro. Still, at high school, I discovered my passion for programming, and, since then, I've been pushing my limits to learn more every day. Graduated from Le Wagon, the best-rated coding Bootcamp worldwide, I find myself eager to pursue the work of a developer, always open to new challenges as a way to improve my background.</p>
-      </div>
-      <div class="col-12 col-md-4 mb-3">
-        <%= image_tag("euPNG.png", width: '350') %>
-      </div>
-      <div class="col-12 col-md-4">
-        <p>As a coder, I look for contributing to my community by turning the codes into tools that will positively add up to everyone’s life quality. I’m a team worker and I evolve under pressure, having hard work and commitment as my principals.</p>
-        <a class="btn contact-btn" href="#contact">Contact Me!</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portifolio -->
-
-  <div class="section" id="my-work">
-    <h2 class="d-flex justify-content-around my-5">My Work</h2>
-
-    <!-- Row -->
-
-    <div class="row">
-      <div class="col-12 col-md-6 my-3">
-        <%= link_to "https://randomealapp.herokuapp.com/", target: "_blank", class: "portifolio-card hvr-ripple-out hvr-bob" do %>
-          <div class="card">
-            <div class="d-flex justify-content-center">
-              <img class="card-img-top work-img" src="https://res.cloudinary.com/dtjyx4v7z/image/upload/v1586286469/randomeal_iphone_hqcw2y.png" alt="Randomeal website screenshot">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Randomeal</h5>
-              <p class="card-text">Randomeal is a mobile first app built in ruby in rails, that searches the internet just to find the perfect restaurat for you! Features a unique reverse filter and a Real-Time Data Scraping!</p>
-            </div>
-          </div>
-          <% end %>
-      </div>
-
-      <div class="col-12 col-md-6 my-3">
-        <%= link_to "https://rioserve.herokuapp.com/", target: "_blank", class: "portifolio-card hvr-ripple-out  hvr-bob" do %>
-          <div class="card">
-            <div class="d-flex justify-content-center">
-              <%= image_tag("rioserve.png", class: "card-img-top p-3") %>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Rioserve</h5>
-              <p class="card-text">Rioserve is a restaurant reservation platform for Rio de Janeiro. It let's you, as a restaurant owner, register your restaurant for all the users to see and make some reservations!</p>
-            </div>
-          </div>
-        <% end %>
-      </div>
-    </div>
-
-    <!-- Row End -->
-
   </div>
 
   <!-- Contact -->
